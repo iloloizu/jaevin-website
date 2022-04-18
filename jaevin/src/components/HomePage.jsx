@@ -1,7 +1,9 @@
 import React from 'react'
 
-export default function HomePage() {
+export default function HomePage({isClicked}) {
   return (
-    <div>HomePage</div>
+    <div >
+        HomePage
+    </div>
   )
 }

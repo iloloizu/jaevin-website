@@ -4,15 +4,23 @@ import HomePage from './components/HomePage';
 import Navbar from './components/Navbar';
 
 import {Routes, Route} from 'react-router-dom'
+import { useState } from 'react';
 
 function App() {
+  const [isClicked, setIsClicked] = useState(false)
+
+  function darkMode(){
+    setIsClicked(isClicked => !isClicked) 
+    console.log(isClicked)
+  }
+
   return (
-    <div>
+    <div style={isClicked ? ({backgroundColor: 'aqua'}): ({backgroundColor: 'yellow'})}>
       <div className='sidebar'>
-        <Navbar/>
+        <Navbar darkMode={darkMode}/>
       </div> 
       <div className='main-content'>
-        <HomePage/>
+        <HomePage isClicked={isClicked}/>
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import {NavLink} from 'react-router-dom';
 import avatar from "../images/jaevin headshot.jpg"
 
-export default function Navbar() { 
+export default function Navbar({darkMode}) { 
 
   return (
     <div className = "NavBar">
@@ -21,7 +21,7 @@ export default function Navbar() {
                     Contact Me
                 </li>
             </ul>
-                <button>Dark Mode</button>
+                <button onClick={darkMode}>Dark Mode</button>
         </nav>
     </div>
   )
