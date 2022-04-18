@@ -10,22 +10,63 @@ code {
 }
 
 .NavBar {
-  width: 15%;
+  width: 25%;
   background-color: pink;
   height: 100vh;
   position: fixed;
-  transition: 0.4s;
+  transition: 0.5s;
 }
 
 .profile img {
   width: 80%;
+  margin-left: 8%;
+  margin-top: 25%;
+  border-radius: 30px;
 }
 
 .main-content {
-  margin-left:16%;
+  margin-left: 25%;
   min-height: 100vh;
 }
 
 .sidebar {
 z-index: 10;
+}
+
+.footer{
+  margin-top: 99%;
+}
+
+.center {
+  text-align: center;
+}
+
+.darkmode-btn{
+  transition: 0.5s;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.bar1 {
+  background-color: pink;
+  width: 50px;
+  height: 6px;
+  border-radius: 10px;
+  /* padding-top: 10px; */
+}
+
+.bar2 {
+  background-color: pink;
+  width: 50px;
+  height: 6px;
+  border-radius: 10px;
+  margin-top: 7px;
+}
+
+.bar3 {
+  background-color: pink;
+  border-radius: 10px;
+  width: 50px;
+  height: 6px;
+  margin-top: 7px;
 }

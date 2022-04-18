@@ -9,6 +9,7 @@ export default function Navbar({darkMode, isSlid}) {
         <nav className="nav">
             <div className="profile">
                 <img src={avatar} alt="Jaevin Reed"/>
+                <h2>Jaevin Reed</h2>
             </div>
             <ul className="nav-item"> 
                 <li className="nav-item">
@@ -21,8 +22,12 @@ export default function Navbar({darkMode, isSlid}) {
                     Contact Me
                 </li>
             </ul>
-                <button onClick={darkMode}>Dark Mode</button>
         </nav>
+            <footer className="footer">
+                <button onClick={darkMode} >
+                Dark Mode
+                </button>
+            </footer>
     </div>
   )
 }
