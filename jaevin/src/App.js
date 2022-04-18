@@ -8,19 +8,30 @@ import { useState } from 'react';
 
 function App() {
   const [isClicked, setIsClicked] = useState(false)
+  const [isSlid, setIsSlid] = useState(false)
 
   function darkMode(){
     setIsClicked(isClicked => !isClicked) 
-    console.log(isClicked)
+  }
+
+  function slideNavBar(){
+    setIsSlid(isSlid => !isSlid) 
+    console.log(isSlid)
   }
 
   return (
     <div style={isClicked ? ({backgroundColor: 'aqua'}): ({backgroundColor: 'yellow'})}>
       <div className='sidebar'>
-        <Navbar darkMode={darkMode}/>
+        <Navbar 
+        darkMode={darkMode}
+        isSlid={isSlid}
+        />
       </div> 
       <div className='main-content'>
-        <HomePage isClicked={isClicked}/>
+        <HomePage 
+        isSlid={isSlid}
+        slideNavBar={slideNavBar}
+        />
       </div>
     </div>
   );

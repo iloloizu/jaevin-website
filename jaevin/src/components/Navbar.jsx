@@ -2,10 +2,10 @@ import React, {useState} from 'react'
 import {NavLink} from 'react-router-dom';
 import avatar from "../images/jaevin headshot.jpg"
 
-export default function Navbar({darkMode}) { 
+export default function Navbar({darkMode, isSlid}) { 
 
   return (
-    <div className = "NavBar">
+    <div className = "NavBar" style={isSlid ? ({left: '-300px'}): ({left: '0px'})}>
         <nav className="nav">
             <div className="profile">
                 <img src={avatar} alt="Jaevin Reed"/>
