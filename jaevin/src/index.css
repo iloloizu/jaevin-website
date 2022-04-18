@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  color: black;
+  /* background-color: black; */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.NavBar {
+  width: 15%;
+  background-color: pink;
+  height: 100vh;
+  position: fixed;
+}
+
+.profile img {
+  width: 80%;
+}
+
+.main-content {
+  margin-left:16%;
+}
+
+.sidebar {
+z-index: 10;
+}
