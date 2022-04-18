@@ -1,8 +1,10 @@
 import React from 'react'
+import img1 from "../images/1.png"
+import img2 from "../images/2.png"
+import img3 from "../images/3.png"
 
+export default function HomePage({isSlid, slideNavBar}) {
 
-
-export default function HomePage({isSlid, slideNavBar, img1, img2, img3}) {
   return (
     <div className='header'>
         <h1 className='center'> Journey With Jaevin</h1>

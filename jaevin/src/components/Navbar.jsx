@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import {NavLink} from 'react-router-dom';
 import avatar from "../images/jaevin headshot.jpg"
 
+
 export default function Navbar({darkMode, isSlid}) { 
 
   return (

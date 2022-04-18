@@ -6,10 +6,6 @@ import Navbar from './components/Navbar';
 import {Routes, Route} from 'react-router-dom'
 import { useState } from 'react';
 
-//images
-import img1 from "../images/IMG_1922.jpg"
-import img2 from "../images/IMG_1924.jpg"
-import img3 from "../images/IMG_1926.jpg"
 
 function App() {
   const [isClicked, setIsClicked] = useState(false)
@@ -42,9 +38,7 @@ function App() {
           <HomePage 
           isSlid={isSlid}
           slideNavBar={slideNavBar}
-          img1={img1}
-          img2={img2}
-          img3={img3}
+      
           />
         </div>
       </div>

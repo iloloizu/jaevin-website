@@ -80,6 +80,12 @@ z-index: 10;
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2.5rem;
+  grid-template-columns: repeat(3, 0.9fr);
+  margin-left: 8%;
+}
+
+.cards img {
+  width: 80%;
+  border-radius: 20px;
+  
 }
