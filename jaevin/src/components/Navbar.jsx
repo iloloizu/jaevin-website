@@ -5,7 +5,7 @@ import avatar from "../images/jaevin headshot.jpg"
 export default function Navbar({darkMode, isSlid}) { 
 
   return (
-    <div className = "NavBar" style={isSlid ? ({left: '-300px'}): ({left: '0px'})}>
+    <div className = "NavBar" style={isSlid ? ({left: '-25%'}) : ({left: '0px'})}>
         <nav className="nav">
             <div className="profile">
                 <img src={avatar} alt="Jaevin Reed"/>
